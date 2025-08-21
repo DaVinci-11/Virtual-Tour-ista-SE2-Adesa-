@@ -1,0 +1,14 @@
+// src/components/ui/Tooltip.js
+export function createTooltip() {
+  const tooltip = document.createElement("div");
+  tooltip.style.position = "absolute";
+  tooltip.style.background = "rgba(0,0,0,0.7)";
+  tooltip.style.color = "#fff";
+  tooltip.style.padding = "5px 10px";
+  tooltip.style.borderRadius = "5px";
+  tooltip.style.fontSize = "20px";
+  tooltip.style.pointerEvents = "none";
+  tooltip.style.display = "none";
+  document.body.appendChild(tooltip);
+  return tooltip;
+}

@@ -1,0 +1,21 @@
+// src/components/ui/RoomTitle.js
+export function createRoomTitle() {
+  const roomTitle = document.createElement("div");
+  roomTitle.innerText =
+    "(CSC4) Virtual Tour-ista in National Museum of the Philippines";
+  roomTitle.style.position = "fixed";
+  roomTitle.style.top = "30px";
+  roomTitle.style.left = "50%";
+  roomTitle.style.transform = "translateX(-50%)";
+  roomTitle.style.fontSize = "28px";
+  roomTitle.style.fontWeight = "italic";
+  roomTitle.style.color = "white";
+  roomTitle.style.textShadow = "2px 2px 4px rgba(0,0,0,0.7)";
+  roomTitle.style.zIndex = 1000;
+  roomTitle.style.opacity = 0;
+  roomTitle.style.transition = "opacity 10s ease";
+  roomTitle.style.display = "none";
+
+  document.body.appendChild(roomTitle);
+  return roomTitle;
+}

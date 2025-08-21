@@ -1,0 +1,87 @@
+// src/data/hotspots.js
+import * as THREE from "three";
+
+export const room1Hotspots = [
+  {
+    type: "artifact",
+    position: new THREE.Vector3(-100, -10, -20),
+    title: "National Museum of the Philippines",
+    description:
+      "Welcome to the National Museum virtual tour!\nExplore each room to learn about history.",
+    image: "/assets/artifact1.jpg",
+  },
+  {
+    type: "navigation",
+    position: new THREE.Vector3(-100, -18, -6),
+    title: "Enter",
+    description:"",
+    action: "room2",
+  },
+];
+
+export const room2Hotspots = [
+  {
+    type: "artifact",
+    position: new THREE.Vector3(-100, 0, -49),
+    title: "Spoliarium",
+      description:
+          "\n- Juan Luna's Spoliarium (1884)\n(1857, Badoc, Ilocos Norte - 1899, Hongkong)\n\nThe Gift of Spain to the Philippines\nNational Fine Arts Collection\n\nIn one of his trips with his Professor, Alejo Vera, Juan Luna visited the Roman Ampitheater and saw the spoliarium-a large room at the basement of the Roman amphitheater were the bodies of gladiators and wild beasts are dragged and despoiled.\nHe saw its thick and gloomy walls. The imagery he needed to imagine this Masterpiece was further inspired when he read a description of what went on in this\n room in a book by Carlos Luis Dezobry entitled Rome au Siecle d' Auguste, un voyage d'un Gaulois à Rome (Rome in the Time of Augustus).\n",
+    image: "/assets/artifact2-1.jpg",
+    music: "/assets/artifact1.mp3",  // 👈 MUST exist
+    audioDescription: "/assets/spoliarium-desc.mp3"
+  },
+
+  { 
+    type: "artifact",
+        position: new THREE.Vector3(90, -4, 210),
+        title: "The Monument to Arthur Walsh Fergusson",
+        description: "MARIANO BENLLIURE Y GIL\n(1862, Valencia, Spain-1947, Madrid, Spain)\n(1859-1908)\n\nSecretary of the Taft Commission of 1900\nFirst Executive Secretary for the Philippine Islands,\n1901-1908\n\n1912\nBronze (bust) and Carrara marble (pedestal)\nCollection of the Embassy of the United States of America in the Philippines On loan to the National Museum of the Philippines courtesy of the Department of State of the United States of America",
+        image: "/assets/artifact2-2.PNG",
+        music: "/assets/artifact2.mp3",
+        audioDescription: "/assets/fergusson-desc.mp3"
+  },
+  {  
+    type: "artifact",
+        position: new THREE.Vector3(39, -2, -38),
+        title: "Bust of Juan Luna Y Novicio (1979)",
+        description:
+          "\n-ANASTACIO T. CAEDO \nPlaster of Paris\n\nThe Gift of Ambeth R. Ocampo\nNational Fine Arts Collection\n\nThis is a bust of Juan Luna created by Anastacio T. Caedo, student and assistant of National Artist Guillermo Tolentino. Caedo, born in Batangas, was known to create monuments and statues\n including the seven life-size figures of General Douglas McArthur and his companions at Palo, Leyte. He also served as a faculty of the University of the Philippines School of Fine Arts for two decades.\n",
+        image: "/assets/artifact2-3.jpg",
+
+  },
+  {
+    type: "navigation",
+    position: new THREE.Vector3(-58, 0, 15),
+    title: "Go to Room 3",
+    action: "room3",
+  },
+   {
+     type: "navigation",
+    position: new THREE.Vector3(58, 0, 15),
+    title: "Go to Room 1",
+    action: "room1",
+  }
+];
+
+export const room3Hotspots = [
+  {
+    type: "artifact",
+    position: new THREE.Vector3(11, -5, -40),
+    title: "Artifact 3-1",
+    description: "Artifact 3-1 description.",
+    image: "/assets/artifact3-1.jpg",
+  },
+{
+     type: "artifact",
+        position: new THREE.Vector3(-20, -30, 400),
+        title: "Artifact 3-3",
+        description: "Artifact 3-3 description.",
+        image: "/assets/artifact3-3.jpg",
+  },
+  {
+    type: "navigation",
+    position: new THREE.Vector3(28, -7, -35),
+    title: "Back to Room 2",
+    action: "room2",
+  },
+];

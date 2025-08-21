@@ -1,0 +1,49 @@
+export function createArtifactModal() {
+  const modal = document.createElement("div");
+  modal.style.position = "fixed";
+  modal.style.top = 0;
+  modal.style.left = 0;
+  modal.style.width = "100%";
+  modal.style.height = "100%";
+  modal.style.background = "rgba(0,0,0,0.85)";
+  modal.style.display = "none";
+  modal.style.flexDirection = "column";
+  modal.style.justifyContent = "center";
+  modal.style.alignItems = "center";
+  modal.style.color = "#fff";
+  modal.style.zIndex = 2000;
+  modal.style.padding = "20px";
+  modal.style.textAlign = "center";
+
+  const modalImg = document.createElement("img");
+  modalImg.style.maxWidth = "60%";
+  modalImg.style.maxHeight = "60%";
+  modalImg.style.marginBottom = "20px";
+
+  const modalTitle = document.createElement("h2");
+  const modalDesc = document.createElement("p");
+  modalDesc.style.whiteSpace = "pre-line";
+
+  const audioDescBtn = document.createElement("button");
+  audioDescBtn.innerText = "Play Audio Description";
+  audioDescBtn.style.marginTop = "10px";
+  audioDescBtn.style.padding = "8px 16px";
+  audioDescBtn.style.fontSize = "18px";
+  audioDescBtn.style.cursor = "pointer";
+
+  const closeBtn = document.createElement("button");
+  closeBtn.innerText = "Close";
+  closeBtn.style.marginTop = "20px";
+  closeBtn.style.padding = "10px 20px";
+  closeBtn.style.fontSize = "25px";
+  closeBtn.style.cursor = "pointer";
+
+  modal.appendChild(modalImg);
+  modal.appendChild(modalTitle);
+  modal.appendChild(modalDesc);
+  modal.appendChild(audioDescBtn);
+  modal.appendChild(closeBtn);
+  document.body.appendChild(modal);
+
+  return { modal, modalImg, modalTitle, modalDesc, closeBtn, audioDescBtn };
+}
